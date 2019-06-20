@@ -1,0 +1,52 @@
+4: Tras la ejecución del siguiente fragmento de código en C/C++:
+int a;
+void proc (int &b, int &c){
+b = 2; 
+c = a%2;
+b = a+b * c;
+}
+a = 1;
+proc (a,a);
+printf ("Variable a = %d , a);
+
+a) La variable a vale 3
+b) La variable a vale 2
+c) La variable a vale 1
+--> d) La variable a vale 0
+
+5: Si a = true, b = true, y c = true, ¿cuál de las siguientes expresiones se evalúa como verdadera?
+a)   !(!a || c || !b)
+--> b)   a && !c || b
+c)   ! (!c || b && a)
+d)   a && !(a || !c)
+
+6: Como programadores hemos de tratar todo lo que pueda variar como variables (valga la redundancia). 
+¿El número de vehículos en la empresa será constante? Con toda probabilidad no, seguramente darán de 
+baja algunos vehículos y comprarán otros conforme pasa el tiempo. En el esquema propuesto se nos indica 
+que hay 32 turismos, pero nosotros generaremos un programa que pregunte cuál es el número de turismos 
+y cuál es la capacidad del depósito de los turismos para realizar un cálculo basado en variables y no en parámetros fijos.
+
+Solucion:------
+#include <stdio.h>
+#include <stdlib.h>
+// Ejercicios resueltos aprenderaprogramar.com
+int main() {
+    int turismos, todoterrenos;    
+    int capTurismos, capTodot;
+    int necesidadesCom;
+
+//  Numero de vehículos y capacidades
+    printf ("Introduce el numero de turismos: ");
+    scanf ("%d", &turismos);
+    printf ("Introduce el numero de todoterrenos: ");
+    scanf ("%d", &todoterrenos);
+    printf ("Introduce la capacidad de los turismos (litros): ");
+    scanf ("%d", &capTurismos);
+    printf ("Introduce la capacidad de los todoterrenos (litros): ");
+    scanf ("%d", &capTodot);
+
+//Cálculo de necesidades de combustible
+    necesidadesCom = turismos * capTurismos + todoterrenos * capTodot;
+    printf ("Las necesidades de combustible totales son (litros): %d", necesidadesCom);
+    return 0;
+}
