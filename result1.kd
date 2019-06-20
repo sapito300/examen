@@ -1,0 +1,17 @@
+1: Dadas las variables A y B de tipo vector de tres elementos, si queremos copiar todos los elementos de A en B, en C/C++ escribimos:
+a) B=A;
+b) for(int i=1; i<=3; i++){ B[ i ] = A[ i ]; }
+c) A=B;
+--> d) for(int i=0; i<3; i++){ B[ i ] = A[ i ]; }
+
+2: En C/C++, dentro de un subprograma, un argumento:
+--> a) No puede cambiar de tipo
+b) Puede cambiar de tipo si se pasa por referencia
+c) Puede cambiar de tipo si se pasa por valor
+d) Nunca puede cambiar de valor
+
+3: ¿Qué características tienen los elementos locales?
+a) Son visibles en su ámbito y fuera
+b) Son invisibles en su ámbito y fuera
+c) Son invisibles en su ámbito y visibles fuera
+--> d) Son visibles en su ámbito e invisibles fuera
